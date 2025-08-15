@@ -11,8 +11,8 @@ After starting, get the initial admin password:
 docker exec -it <container_name> cat /var/jenkins_home/secrets/initialAdminPassword
 ```
 
--Open Jenkins in browser: http://<server-ip>:8080
--Complete setup wizard and install Suggested Plugins.
+- Open Jenkins in browser: http://<server-ip>:8080
+- Complete setup wizard and install Suggested Plugins.
 
 ## Install Java & Maven
 
