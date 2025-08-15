@@ -17,20 +17,20 @@ docker exec -it <container_name> cat /var/jenkins_home/secrets/initialAdminPassw
 ## Install Java & Maven
 
 If using Jenkins Docker:
--Go to Manage Jenkins → Global Tool Configuration
--Under JDK, add JDK 8 or 11 (check “Install automatically” if needed)
--Under Maven, add Maven (e.g., Maven 3.8.6) and select “Install automatically”.
+- Go to Manage Jenkins → Global Tool Configuration
+- Under JDK, add JDK 8 or 11 (check “Install automatically” if needed)
+- Under Maven, add Maven (e.g., Maven 3.8.6) and select “Install automatically”.
 
 
 ##  Create Jenkins Job
 
--On Jenkins dashboard, click New Item
--Enter project name: Hello-Java-Maven
--Select Freestyle Project
--In Source Code Management:
--Option 1: Git → Add repository URL if stored in GitHub
--In Build Environment, ensure Provide Maven settings is enabled.
--In Build section:
+- On Jenkins dashboard, click New Item
+- Enter project name: Hello-Java-Maven
+- Select Freestyle Project
+- In Source Code Management:
+- Option 1: Git → Add repository URL if stored in GitHub
+- In Build Environment, ensure Provide Maven settings is enabled.
+- In Build section:
 ```
 Add Invoke top-level Maven targets
 Set Goals:
@@ -38,9 +38,9 @@ clean package
 ```
 ## Build the Job
 
--Click Build Now
--Open Console Output and check for:
--[INFO] BUILD SUCCESS
+- Click Build Now
+- Open Console Output and check for:
+- [INFO] BUILD SUCCESS
 
 ## Screenshots:
 
